@@ -1,0 +1,54 @@
+/* style.css - Estilo mejorado */
+:root {
+    --bg-dark: #09090b;
+    --card-bg: #111113;
+    --accent-blue: #3b82f6;
+    --text-white: #ffffff;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+/* Contenedor de las tarjetas de planes */
+.planes-container {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 40px;
+}
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid #27272a;
+    border-radius: 16px;
+    padding: 32px;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    border-color: var(--accent-blue);
+    transform: translateY(-10px);
+}
+
+.btn-contratar {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #18181b;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* El botón azul que destaca en la imagen */
+.card.destacada .btn-contratar {
+    background: var(--accent-blue);
+}
