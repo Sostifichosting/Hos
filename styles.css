@@ -1,0 +1,59 @@
+.Fondo {
+    background-color :#df82f7;
+    width: 600px;
+    height: 700px;
+    margin: auto;
+    padding: 10px;
+    padding-top: 300px;
+    font-size: 100px;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 50px #000;
+}
+
+.informacion {
+    font-size: 50px;
+    text-align: center;
+    font-family: Chelsea Market;
+    position: relative;
+    top: -300px;
+}
+
+.tunombre {
+    border: none;
+    background-color: #f1fa70;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    top: -330px;
+    right: -30px;
+}
+
+.nombreg {
+    font-size: 25px;
+    margin: 0;
+    font-family: Chelsea Market;
+    position: relative;
+    top: -280px;
+    right: -30px;
+}
+
+.tuapellido {
+    border: none;
+    background-color: #f1fa70;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    top: -330px;
+    right: -28px;
+}
+
+.apellidog {
+    font-size: 25px;
+    margin: 0;
+    font-family: Chelsea Market;
+    position: relative;
+    top: -280px;
+    right: -30px;
+    margin: 0;
+}
