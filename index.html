@@ -1,87 +1,17 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sostific Hosting | Portal de Acceso</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        body { background-color: #0d1117; color: #ffffff; font-family: 'Inter', sans-serif; }
-        .gradient-text { background: linear-gradient(90deg, #3b82f6, #10b981); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .plan-card { background: #161b22; border: 1px solid #30363d; border-radius: 16px; padding: 32px; transition: transform 0.2s; }
-        .plan-card:hover { border-color: #3b82f6; }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <title>Enlaces avanzados</title>
 </head>
 <body>
-
-    <header class="flex items-center justify-between px-10 py-6 border-b border-gray-800">
-        <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center font-bold text-blue-800 text-lg">Sf</div>
-            <div class="text-2xl font-bold"><span class="text-blue-500">Sostific</span> <span class="text-gray-400">Hosting</span></div>
-        </div>
-        <div id="auth-buttons" class="flex gap-3">
-            <button onclick="document.getElementById('modal-login').classList.remove('hidden')" class="text-sm font-semibold text-gray-400 hover:text-white">Iniciar Sesión</button>
-            <button onclick="document.getElementById('modal-register').classList.remove('hidden')" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg text-sm font-bold">Registrarse</button>
-        </div>
-    </header>
-
-    <section class="text-center py-20 px-4">
-        <h1 class="text-6xl font-extrabold mb-6">EL HOSTING DEFINITIVO PARA TUS <br><span class="gradient-text">PROYECTOS</span></h1>
-        <p class="text-gray-400 text-lg max-w-2xl mx-auto mb-10">Infraestructura de alto rendimiento diseñada para bots de Discord y servidores de Minecraft.</p>
-        
-        <div class="flex justify-center gap-4">
-            <button onclick="document.getElementById('planes').scrollIntoView()" class="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-xl font-bold transition flex items-center gap-2">🚀 Ver Planes</button>
-            <a href="https://discord.gg/Dbry64s6r" target="_blank" class="bg-[#5865F2] hover:bg-[#4752C4] px-8 py-3 rounded-xl font-bold transition flex items-center gap-2">
-                💬 Soporte en Discord
-            </a>
-        </div>
-    </section>
-
-    <div id="planes" class="pb-20 px-10">
-        <h2 class="text-2xl font-bold mb-10 text-center">💬 Hosting Discord Bots</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-20">
-            <div class="plan-card"><h3 class="text-xl font-bold">Bot Básico</h3><p class="text-4xl font-extrabold my-4">$1.50</p><ul class="space-y-3 text-gray-400 text-sm mb-8"><li>✓ 512MB RAM</li><li>✓ 1 vCPU</li><li>✓ 5GB NVMe</li></ul><button onclick="document.getElementById('modal-compra').classList.remove('hidden')" class="w-full bg-[#1f2937] py-3 rounded-lg">Contratar</button></div>
-            <div class="plan-card border-blue-500"><h3 class="text-xl font-bold">Bot Estándar</h3><p class="text-4xl font-extrabold my-4">$3.00</p><ul class="space-y-3 text-gray-400 text-sm mb-8"><li>✓ 1GB RAM</li><li>✓ 1.5 vCPU</li><li>✓ 15GB NVMe</li></ul><button onclick="document.getElementById('modal-compra').classList.remove('hidden')" class="w-full bg-blue-600 py-3 rounded-lg">Contratar</button></div>
-            <div class="plan-card"><h3 class="text-xl font-bold">Bot Profesional</h3><p class="text-4xl font-extrabold my-4">$6.00</p><ul class="space-y-3 text-gray-400 text-sm mb-8"><li>✓ 2GB RAM</li><li>✓ 2 vCPU</li><li>✓ 30GB NVMe</li></ul><button onclick="document.getElementById('modal-compra').classList.remove('hidden')" class="w-full bg-[#1f2937] py-3 rounded-lg">Contratar</button></div>
-        </div>
-
-        <h2 class="text-2xl font-bold mb-10 text-center">📦 Servidores de Minecraft</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            <div class="plan-card"><h3 class="text-xl font-bold">Plan Carbón</h3><p class="text-4xl font-extrabold my-4">$4.00</p><ul class="space-y-3 text-gray-400 text-sm mb-8"><li>✓ 2GB RAM</li><li>✓ Ryzen 9</li><li>✓ DDoS Protection</li></ul><button onclick="document.getElementById('modal-compra').classList.remove('hidden')" class="w-full bg-[#1f2937] py-3 rounded-lg">Contratar</button></div>
-            <div class="plan-card border-green-500"><h3 class="text-xl font-bold">Plan Hierro</h3><p class="text-4xl font-extrabold my-4">$10.00</p><ul class="space-y-3 text-gray-400 text-sm mb-8"><li>✓ 6GB RAM</li><li>✓ NVMe Ilimitado</li><li>✓ Subdominio</li></ul><button onclick="document.getElementById('modal-compra').classList.remove('hidden')" class="w-full bg-green-600 py-3 rounded-lg">Contratar</button></div>
-            <div class="plan-card"><h3 class="text-xl font-bold">Plan Diamante</h3><p class="text-4xl font-extrabold my-4">$16.00</p><ul class="space-y-3 text-gray-400 text-sm mb-8"><li>✓ 10GB RAM</li><li>✓ BungeeCord</li><li>✓ Soporte 24/7</li></ul><button onclick="document.getElementById('modal-compra').classList.remove('hidden')" class="w-full bg-[#1f2937] py-3 rounded-lg">Contratar</button></div>
-        </div>
+    <div class="Fondo">
+        <h2 class="informacion">INFORMACION PERSONAL</h2>
     </div>
-
-    <div id="modal-admin" class="fixed inset-0 bg-black/90 hidden z-50 p-4">
-        <div class="max-w-4xl mx-auto mt-20 bg-[#0d1117] border border-gray-700 rounded-xl p-8">
-            <h2 class="text-2xl font-bold mb-6">Gestión de Admins</h2>
-            <div class="bg-[#161b22] p-6 rounded-lg border border-gray-700 mb-6">
-                <input id="new-admin-email" type="email" placeholder="correo@ejemplo.com" class="w-full bg-black border border-gray-700 p-3 rounded-lg mb-2">
-                <button onclick="agregarAdmin()" class="w-full bg-blue-600 py-2 rounded-lg font-bold">+ Añadir Admin</button>
-            </div>
-            <div id="admin-table-body" class="space-y-2"></div>
-            <button onclick="document.getElementById('modal-admin').classList.add('hidden')" class="mt-8 text-gray-500 underline">Cerrar</button>
-        </div>
-    </div>
-
-    <div id="modal-login" class="fixed inset-0 bg-black/80 hidden flex items-center justify-center z-50"><div class="bg-[#161b22] p-8 rounded-2xl border border-gray-700 w-96"><input id="login-user" type="text" placeholder="Usuario" class="w-full bg-[#0d1117] border border-gray-600 rounded-lg p-3 mb-4"><input id="login-password" type="password" placeholder="Contraseña" class="w-full bg-[#0d1117] border border-gray-600 rounded-lg p-3 mb-4"><button onclick="iniciarSesion()" class="w-full bg-blue-600 py-3 rounded-lg font-bold">Entrar</button></div></div>
-    <div id="modal-register" class="fixed inset-0 bg-black/80 hidden flex items-center justify-center z-50"><div class="bg-[#161b22] p-8 rounded-2xl border border-gray-700 w-96"><input id="reg-user" type="text" placeholder="Usuario" class="w-full bg-[#0d1117] border border-gray-600 rounded-lg p-3 mb-4"><input id="reg-email" type="email" placeholder="Correo" class="w-full bg-[#0d1117] border border-gray-600 rounded-lg p-3 mb-4"><input id="reg-password" type="password" placeholder="Contraseña" class="w-full bg-[#0d1117] border border-gray-600 rounded-lg p-3 mb-4"><button onclick="registrarUsuario()" class="w-full bg-blue-600 py-3 rounded-lg font-bold">Registrarse</button></div></div>
-    <div id="modal-compra" class="fixed inset-0 bg-black/80 hidden flex items-center justify-center z-50"><div class="bg-[#161b22] p-8 rounded-2xl border border-gray-700 w-96"><input id="emailInput" type="email" placeholder="Correo" class="w-full bg-[#0d1117] border border-gray-600 rounded-lg p-3 mb-4"><input id="idInput" type="text" placeholder="ID Discord" class="w-full bg-[#0d1117] border border-gray-600 rounded-lg p-3 mb-4"><button onclick="enviar()" class="w-full bg-blue-600 py-3 rounded-lg font-bold">Enviar</button></div></div>
-
-    <script>
-        let listaAdmins = JSON.parse(localStorage.getItem('admins')) || ["mathiascollazosmedina721@gmail.com"];
-        let usersDB = JSON.parse(localStorage.getItem('usersDB')) || {};
-        let userLogged = JSON.parse(localStorage.getItem('userLogged'));
-        window.onload = () => { if(userLogged) updateHeader(userLogged.name, userLogged.email); renderAdminTable(); };
-        function renderAdminTable() { document.getElementById('admin-table-body').innerHTML = listaAdmins.map(email => `<div class="p-3 bg-[#161b22] border border-gray-700 rounded text-blue-400 font-mono">${email}</div>`).join(''); }
-        function agregarAdmin() { const email = document.getElementById('new-admin-email').value; if(email && !listaAdmins.includes(email)) { listaAdmins.push(email); localStorage.setItem('admins', JSON.stringify(listaAdmins)); renderAdminTable(); location.reload(); } }
-        function registrarUsuario() { const name = document.getElementById('reg-user').value; const email = document.getElementById('reg-email').value; const pass = document.getElementById('reg-password').value; usersDB[name] = {email, pass}; localStorage.setItem('usersDB', JSON.stringify(usersDB)); alert("Cuenta creada."); location.reload(); }
-        function iniciarSesion() { const name = document.getElementById('login-user').value; const pass = document.getElementById('login-password').value; if(usersDB[name] && usersDB[name].pass === pass) { localStorage.setItem('userLogged', JSON.stringify({name, email: usersDB[name].email})); location.reload(); } else { alert("Datos incorrectos."); } }
-        function updateHeader(name, email) { const isAdmin = listaAdmins.includes(email); const adminBtn = isAdmin ? `<button onclick="document.getElementById('modal-admin').classList.remove('hidden')" class="text-yellow-400 font-bold underline mr-2">Admin</button>` : ""; document.getElementById('auth-buttons').innerHTML = `<div class="flex items-center gap-4 bg-gray-800 px-4 py-2 rounded-lg border border-gray-700">${adminBtn}<span class="text-green-400">● ${name}</span><button onclick="salir()" class="text-red-400 underline">Salir</button></div>`; }
-        function salir() { localStorage.removeItem('userLogged'); location.reload(); }
-        async function enviar() { const webhookUrl = "https://discord.com/api/webhooks/1515956004288856195/Kbk9pd3qJMTjdR0V0AgjCADkqZwtUp0OMJmQ2DUQDKe9D2jsQMIlIs07_L33VYgSJ8Ck"; const email = document.getElementById('emailInput').value; const id = document.getElementById('idInput').value; await fetch(webhookUrl, { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({content: `Compra: ${email}, ID: ${id}`}) }); alert("Enviado."); location.reload(); }
-    </script>
 </body>
 </html>
