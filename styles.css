@@ -1,0 +1,18 @@
+.Fondo {
+    background-color :#ededed;
+    width: 600px;
+    height: 700px;
+    margin: auto;
+    padding: 10px;
+    padding-top: 300px;
+    font-size: 100px;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 50px #000;
+}
+
+.informacion {
+    font-size: 50px;
+    text-align: center;
+    font-family: Chelsea Market;
+}
